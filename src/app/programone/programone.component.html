@@ -1,0 +1,25 @@
+<div class="col-md-12 col-sm-12 col-log-12">
+    <h2> Program 1 </h2>
+</div>
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-log-12">
+        <label for=""> 1. Given an array nums of size n, return the majority element.
+            The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the
+            majority element always exists in the array.
+            Example 1:
+            Input : nums = [3,2,3]
+            Output: 3 </label>
+    </div>
+
+
+    <span> For Example : enter like 1,2,3,4,5,6,1,2,3,1,2,3,2,2,2</span>
+
+    <div class="col-md-12 col-sm-12 col-log-12 paddingArround">
+        <input type="text" [(ngModel)]="inputTextBox" placeholder="Please input number in comma seperated">
+        <button [disabled]="inputTextBox===''" (click)="getResult()" class="resultButton"> Result </button>
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-log-12 paddingArround">
+        Result : {{finalResult}}
+    </div>
+</div>

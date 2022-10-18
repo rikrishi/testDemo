@@ -1,0 +1,30 @@
+<div class="col-md-12 col-sm-12 col-log-12">
+    <h2> Program 2 </h2>
+</div>
+
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-log-12">
+        <label for=""> 2.Find whether these two string are anagram of each other or not
+            Input: str1: ‘cat’ str2:’act’
+            Output: isanAnagram
+            Input: str1: ‘tap’ str2:’pet’
+            Output: isnotanAnagram
+        </label>
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-log-12 paddingArround">
+        <input type="text" [(ngModel)]="inputTextBox" placeholder="Please input string 1">
+    </div>
+    <div class="col-md-12 col-sm-12 col-log-12 paddingArround">
+        <input type="text" [(ngModel)]="inputTextBox2" placeholder="Please input string 2">
+
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-log-12 paddingArround">
+
+        <button [disabled]="inputTextBox==='' || inputTextBox2===''" (click)="getResult()" class="resultButton"> Result
+        </button>
+        <br>
+        Result : {{finalResult}}
+    </div>
+</div>

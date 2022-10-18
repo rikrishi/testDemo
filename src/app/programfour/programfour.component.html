@@ -1,0 +1,41 @@
+<div class="col-md-12 col-sm-12 col-log-12">
+    <h2> Program 4 </h2>
+</div>
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-log-12">
+        <label for="">
+            4. Given two strings s and t, return true if s is a subsequence of t, or
+            false otherwise.
+            A subsequence of a string is a new string that is formed from the
+            original string by deleting some (can be none) of the characters
+            without disturbing the relative positions of the remaining characters.
+            (i.e., &quot;ace&quot; is a subsequence of &quot;abcde&quot; while &quot;aec&quot; is not).
+
+            Internal
+
+            Example 1:
+            Input: s = &quot;abc&quot;, t = &quot;ahbgdc&quot;
+            Output: true
+            Example 2:
+            Input: s = &quot;axc&quot;, t = &quot;ahbgdc&quot;
+            Output: false
+        </label>
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-log-12 paddingArround">
+        <input type="text" [(ngModel)]="inputTextBox" placeholder="Please input string 1">
+    </div>
+    <div class="col-md-12 col-sm-12 col-log-12 paddingArround">
+        <input type="text" [(ngModel)]="inputTextBox2" placeholder="Please input string 2">
+
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-log-12 paddingArround">
+
+        <button [disabled]="inputTextBox==='' || inputTextBox2===''" (click)="getResult()" class="resultButton">
+            Result
+        </button>
+        <br>
+        Result : {{finalResult}}
+    </div>
+</div>

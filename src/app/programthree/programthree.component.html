@@ -1,0 +1,40 @@
+<div class="col-md-12 col-sm-12 col-log-12">
+    <h2> Program 3 </h2>
+</div>
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-log-12">
+        <label for=""> 3.Find whether a given two strings m and n are isomorphic.
+            Two strings s and t are isomorphic if the characters in s can be replaced to get t.
+            All occurrences of a character must be replaced with another character while preserving the
+            order of characters. No two characters may map to the same character, but a character may
+            map to itself.
+            Example 1:
+            Input: s = &quot;egg&quot;, t = &quot;add&quot;
+            Output: true
+            For example:
+            e -&gt; a
+            g -&gt; d
+            so when you replace egg it becomes add
+            Example 2:
+            Input: s = &quot;too&quot;, t = &quot;bar&quot;
+            Output: false
+            It is false because t-&gt;b , a -&gt; a so the result baa != bar
+        </label>
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-log-12 paddingArround">
+        <input type="text" [(ngModel)]="inputTextBox" placeholder="Please input string 1">
+    </div>
+    <div class="col-md-12 col-sm-12 col-log-12 paddingArround">
+        <input type="text" [(ngModel)]="inputTextBox2" placeholder="Please input string 2">
+
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-log-12 paddingArround">
+
+        <button [disabled]="inputTextBox==='' || inputTextBox2===''" (click)="getResult()" class="resultButton"> Result
+        </button>
+        <br>
+        Result : {{finalResult}}
+    </div>
+</div>

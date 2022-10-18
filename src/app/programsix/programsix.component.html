@@ -1,0 +1,28 @@
+<div class="col-md-12 col-sm-12 col-log-12">
+    <h2> Program 6 </h2>
+</div>
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-log-12">
+        <label for=""> 6. Find the longest common prefix string from an array of string
+            If there is no common prefix, return an empty string &quot;&quot;.
+            Example 1:
+            Input: strs = [&quot;flowing&quot;,&quot;flown&quot;,&quot;flew&quot;]
+            Output: &quot;fl&quot;
+            Example 2:
+            Input: strs = [&quot;apple&quot;,&quot;night&quot;,&quot;cat&quot;]
+            Output: &quot;&quot;
+            Explanation: There is no common prefix among the input strings.</label>
+    </div>
+
+
+    <span> For Example : enter like "flowing","flown","flew" </span>
+
+    <div class="col-md-12 col-sm-12 col-log-12 paddingArround">
+        <input type="text" [(ngModel)]="inputTextBox" placeholder="Please input number in comma seperated">
+        <button [disabled]="inputTextBox===''" (click)="getResult()" class="resultButton"> Result </button>
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-log-12 paddingArround">
+        Result : {{finalResult}}
+    </div>
+</div>

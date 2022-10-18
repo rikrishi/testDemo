@@ -1,0 +1,24 @@
+<div class="col-md-12 col-sm-12 col-log-12">
+    <h2> Program 5 </h2>
+</div>
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-log-12">
+        <label for=""> 5. From a given string return a longest palindrome substring.
+            Example 1:
+            Input: s = &quot;babad&quot;
+            Output: &quot;bab&quot;
+            Explanation: &quot;aba&quot; is also a valid answer.
+            Example 2:
+            Input: s = &quot;cbbd&quot;
+            Output: &quot;bb&quot; </label>
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-log-12 paddingArround">
+        <input type="text" [(ngModel)]="inputTextBox" placeholder="Please input number in comma seperated">
+        <button [disabled]="inputTextBox===''" (click)="getResult()" class="resultButton"> Result </button>
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-log-12 paddingArround">
+        Result : {{finalResult}}
+    </div>
+</div>
